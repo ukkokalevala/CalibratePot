@@ -1,0 +1,11 @@
+const int potPin = A0;  // Potentiometer connected to analog pin A0
+
+void setup() {
+  Serial.begin(9600);  // Start the serial communication at 9600 baud
+}
+
+void loop() {
+  int potValue = analogRead(potPin);  // Read the potentiometer value
+  Serial.println(potValue);           // Print the potentiometer value
+  delay(100);                         // Small delay for stability
+}
